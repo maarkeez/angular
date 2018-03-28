@@ -1,0 +1,4 @@
+# Comandos ejecutados
+npm install
+npm run typings -- install dt~core-js --save -–global
+npm run typings -- install dt~node --save --global
