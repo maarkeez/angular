@@ -1,5 +1,5 @@
 # Description
-Online product catalog that:
+Online product catalog where:
 
 1. Customers can browse by: category and page.
 2. Shopping cart where users can add and remove products.
