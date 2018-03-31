@@ -14,12 +14,16 @@ var static_datasource_1 = require("./static.datasource");
 var cart_model_1 = require("./cart.model");
 var order_model_1 = require("./order.model");
 var order_repository_1 = require("./order.repository");
+var rest_datasource_1 = require("./rest.datasource");
+var http_1 = require("@angular/http");
 var ModelModule = (function () {
     function ModelModule() {
     }
     ModelModule = __decorate([
         core_1.NgModule({
-            providers: [product_repository_1.ProductRepository, static_datasource_1.StaticDataSource, cart_model_1.Cart, order_model_1.Order, order_repository_1.OrderRepository]
+            imports: [http_1.HttpModule],
+            providers: [product_repository_1.ProductRepository, cart_model_1.Cart, order_model_1.Order, order_repository_1.OrderRepository,
+                { provide: static_datasource_1.StaticDataSource, useClass: rest_datasource_1.RestDataSource }]
         }), 
         __metadata('design:paramtypes', [])
     ], ModelModule);
