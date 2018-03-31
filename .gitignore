@@ -4,3 +4,8 @@ HtmlCssPrimer/node_modules
 HtmlCssPrimer/typings
 JavaScriptPrimer/node_modules
 JavaScriptPrimer/typings
+*.log
+SportsStore/node_modules
+SportsStore/typings
+
+
