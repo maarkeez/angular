@@ -1,6 +1,7 @@
 <!-- Navigation bar -->
 <div class="navbar navbar-inverse bg-inverse">
 	<a class="navbar-brand">SPORTS STORE</a>
+	<cart-summary></cart-summary>
 </div>
 
 <!-- Categories (Filters) -->
@@ -24,7 +25,12 @@
 				{{ product.price | currency:"USD":true:"2.2-2" }}
 			</span>
 		</h4>
-		<div class="card-text p-a-1">{{product.description}}</div>
+		<div class="card-text p-a-1">
+			{{product.description}}
+			<button class="btn btn-success btn-sm pull-xs-right" (click)="addProductToCart(product)">
+				Add To Cart
+			</button>
+		</div>
 	</div>
 
 	<!-- Pagination (Items per page) -->
